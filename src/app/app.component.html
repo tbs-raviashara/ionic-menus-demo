@@ -1,0 +1,128 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-header>
+        <ion-toolbar>
+          <!-- Design-1  Start -->
+          <!-- <ion-row>
+            <ion-col size="12" class="ion-padding">
+              <img src="../assets/images/user.png" class="setUserIcon" />
+            </ion-col>
+            <ion-col class="ion-padding-start" size="12">
+              Test User
+            </ion-col>
+            <ion-col class="ion-padding-start" size="12">
+             testuser@yopmail.com
+            </ion-col>
+          </ion-row> -->
+          <!-- Design-1 End -->
+
+          <!-- Design-2 Start -->
+          <!-- <ion-row>
+            <ion-col size="2" class="ion-text-center">
+              <ion-icon name="settings" size="large"></ion-icon>
+            </ion-col>
+            <ion-col size="8" class="ion-text-center ion-padding-top">
+              <img src="../assets/images/user.png" class="setUserIcon-1" />
+            </ion-col>
+            <ion-col size="2" class="ion-text-center">
+              <ion-icon name="power" size="large"></ion-icon>
+            </ion-col>
+            <ion-col class="ion-padding-start ion-text-center" size="12">
+              Test User
+            </ion-col>
+            <ion-col class="ion-padding-start ion-text-center" size="12">
+              testuser@yopmail.com
+            </ion-col>
+          </ion-row> -->
+          <!-- Design-2 End -->
+
+          <!-- Design-3 Start -->
+          <!-- <ion-row>
+            <ion-col size="3" class="ion-text-center">
+              <img src="../assets/images/user.png" class="setUserIcon" />
+            </ion-col>
+            <ion-col size="9" class="displayCenterContent">
+              <ion-row class="ion-no-padding">
+                <ion-col size="12" class="ion-no-padding">
+                  Test User
+                </ion-col>
+                <ion-col size="12" class="ion-no-padding">
+                  testuser@yopmail.com
+                </ion-col>
+              </ion-row>
+            </ion-col>
+            <ion-col size="12">
+              <ion-segment (ionChange)="segmentChanged($event)">
+                <ion-segment-button value="View Profile" mode="ios">
+                  <ion-label>Setting</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="Setting" mode="ios">
+                  <ion-label>Logout</ion-label>
+                </ion-segment-button>
+              </ion-segment>
+            </ion-col>
+          </ion-row> -->
+          <!-- Design-3 End -->
+
+          <!-- Design-4 Start -->
+          <!-- <ion-row>
+            <ion-col size="4" class="ion-text-center">
+              <img src="../assets/images/user.png" class="setUserIcon-1" />
+            </ion-col>
+            <ion-col size="8" class="displayCenterContent-1">
+              <ion-row class="ion-no-padding">
+                <ion-col size="12">
+                  Test User
+                </ion-col>
+                <ion-col size="12">
+                  <ion-icon name="settings" size="large"></ion-icon>
+                  <ion-icon name="power" size="large"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row> -->
+          <!-- Design-4 End -->
+
+          <!-- Design-5 Start -->
+          <ion-row class="customPadding">
+            <ion-col size="6" offset="3" class="ion-text-center">
+              <img src="../assets/images/user.png" class="setUserIcon-2" />
+            </ion-col>
+            <ion-col size="12" class="ion-text-center">
+              Test User
+            </ion-col>
+            <ion-col size="12" class="ion-text-center">
+              testuser@yopmail.com
+            </ion-col>
+          </ion-row>
+          <!-- Design-5 End -->
+
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item mode="md" [routerDirection]="'root'" [routerLink]="[p.url]" lines="none"
+              class="ion-padding-horizontal">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+      <ion-footer class="ion-text-center ion-no-padding">
+        <ion-button expand="full" class="ion-no-padding" mode="ios">
+          <ion-icon slot="start" name="power"></ion-icon>
+          Logout
+        </ion-button>
+        <p>
+          Version: 1.0.0
+        </p>
+      </ion-footer>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

@@ -1,7 +1,5 @@
 # Menus
 
-Appointments are an Application to manage schedules appointments for meetings, visits.
-
 ## Prerequisites
 - [Ionic](https://ionicframework.com/docs/installation/cli/#install-the-ionic-cli)
 

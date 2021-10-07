@@ -3,6 +3,22 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-header>
         <ion-toolbar>
+          <ion-row>
+            <ion-col size="12">
+              <div class="menu-header-bg"></div>
+              <div class="header-content">
+                <img src="assets/images/user.png" />
+                <ion-label class="ion-padding-start">
+                  <ion-text color="light">
+                    <h2>Test User</h2>
+                    <p>
+                      testuser@yopmail.com
+                    </p>
+                  </ion-text>
+                </ion-label>
+              </div>
+            </ion-col>
+          </ion-row>
           <!-- Design-1  Start -->
           <!-- <ion-row>
             <ion-col size="12" class="ion-padding">
@@ -85,7 +101,7 @@
           <!-- Design-4 End -->
 
           <!-- Design-5 Start -->
-          <ion-row class="customPadding">
+          <!-- <ion-row class="customPadding">
             <ion-col size="6" offset="3" class="ion-text-center">
               <img src="../assets/images/user.png" class="setUserIcon-2" />
             </ion-col>
@@ -95,7 +111,7 @@
             <ion-col size="12" class="ion-text-center">
               testuser@yopmail.com
             </ion-col>
-          </ion-row>
+          </ion-row> -->
           <!-- Design-5 End -->
 
         </ion-toolbar>
@@ -114,7 +130,7 @@
         </ion-list>
       </ion-content>
       <ion-footer class="ion-text-center ion-no-padding">
-        <ion-button expand="full" class="ion-no-padding" mode="ios">
+        <ion-button expand="full" class="ion-no-padding" mode="ios" color="tertiary">
           <ion-icon slot="start" name="power"></ion-icon>
           Logout
         </ion-button>

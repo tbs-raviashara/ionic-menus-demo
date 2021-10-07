@@ -16,6 +16,7 @@ git clone https://github.com/tbs-raviashara/ionic-menus-demo.git
 <img src="src/assets/ss/menu3.png" width="200"/> &nbsp;
 <img src="src/assets/ss/menu4.png" width="200"/> &nbsp;
 <img src="src/assets/ss/menu5.png" width="200"/> &nbsp;
+<img src="src/assets/ss/menu6.png" width="200"/> &nbsp;
 
 ## Start A Local Dev Server
 ```

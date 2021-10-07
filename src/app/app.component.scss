@@ -28,3 +28,30 @@
   height: auto;
   border-radius: 50%;
 }
+
+.menu-header-bg {
+  height: 180px;
+  width: 350px;
+  background: #7044ff;
+  background: linear-gradient(90deg, #7044ff 0%, #7e57ff 100%);
+  box-shadow: 0px 1px 10px rgba(126, 87, 255, 0.5);
+  transform: rotate(-15deg);
+  border-radius: 10px 10px 10px 50px;
+  margin-left: -18px;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.header-content {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 7px solid #9a81ec;
+  }
+}

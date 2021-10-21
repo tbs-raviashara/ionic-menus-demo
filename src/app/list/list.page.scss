@@ -1,1 +1,45 @@
 
+.listPage {
+    ion-thumbnail {
+        width: 75px;
+        height: 75px;
+        img {
+            border-radius: 10px;
+        }
+    }
+    .price {
+        float: right;
+        color: #69a03a;
+    }
+    .rate {
+        color: #cccccc;
+    }
+    #quantity {
+        span {
+            font-weight: 600;
+        }
+        .add {
+            padding: 5px;
+            margin-left: 20px;
+        }
+        .remove {
+            padding: 5px;
+            margin-right: 20px;
+        }
+    }
+    .addButton {
+        float: right;
+        button {
+            padding: 5px 20px;
+            color: #ffffff;
+            background-color: #69a03a;
+            border-radius: 5px;
+        }
+    }
+    ion-label {
+        ion-icon {
+            margin-right: 8px;
+            color: #69a03a;
+        }
+    }
+}

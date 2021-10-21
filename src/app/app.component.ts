@@ -13,7 +13,7 @@ export class AppComponent {
   public appPages = [
     {
       title: 'Home',
-      url: '/home/tab1',
+      url: '/home',
       icon: 'home'
     },
     {
